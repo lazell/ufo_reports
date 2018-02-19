@@ -1,0 +1,20 @@
+# Directories
+
+archive/
+archive/*
+Other_files/
+Other_files/*
+data/additional/*
+
+Additional_EDA_on_UFO_data-Feb.ipynb
+data/data.pkl
+
+# Data Formats
+*.pkl
+*.json
+
+# Python & Jupyter
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.pyc
+__pycache__/*
