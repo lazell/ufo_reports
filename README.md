@@ -1,5 +1,5 @@
 ## What the UFO?
-##### Exploratory analysis with clustering and NLP of UFO reports for the celestially curious
+##### Exploratory analysis with Machine Learning clustering and Natural Language Processing of UFO reports for the celestially curious
 
 
 ![celestial](/images/ryan-lange-552065.jpg)
@@ -39,13 +39,13 @@ Once we have our TF-IDF matrix of vectors, we can compare their similarity to ea
 
 The two steps are repeated many times. At early iterations it is likely the centroids will be closer to each other, they will adapt and move until the best fit is found.
 
-Here's a cool visualization I found with 4 clusters
+#### Visualization of k-means Clustering (4 Clusters)
 
 ![k-means_demo](https://camo.githubusercontent.com/9394c353adeeed261a0fd0588e2600f5e696433e/687474703a2f2f692e696d6775722e636f6d2f755a4b714b58692e676966)
-reference: https://github.com/vinhkhuc/VanillaML
+Image reference: https://github.com/vinhkhuc/VanillaML
 
 
-Practically speaking scikit-learn's library use 300 iterations as the default, it runs the update function 10 times (with 10 different seeds) and chooses the best output based on inertia as the model.
+Practically speaking scikit-learn's library use 300 iterations as the default, it runs the clustering model 10 times (with 10 different seeds) and chooses the best output based on inertia as the model.
 
 ### Clustering Results  the UFO Data
 
@@ -99,7 +99,7 @@ The two clusters that jump out at me are the first two which relate to 4th July 
 
 ![date_clusters](/images/k_means_clusters.png)
 
-Interestingly reports which were classified as cluster 1 were mostly 4th July 2014 and cluster 2 were almost entirely November 7th 2015. Not surprisingly, cluster 4 is spread out across all dates since they are mostly generic descriptive words.
+Interestingly reports in cluster 1 were mostly 4th July 2014 (and not 1997). Cluster 2 were almost entirely November 7th 2015. Not surprisingly, cluster 4 is spread out across all dates since they are mostly generic descriptive words which would score similar to each other given the nature of the text.
 
 For a handful of dates, I followed a similar technique of TF-IDF above, to get a summary of popular n-grams (mostly bi-grams) for those events and represented a selection of results in a word-cloud (Please note: these are only a selection of words from the analysis). The more frequent a bi-gram appeared in the group, the larger the lettering. The larger the letters are compared to other dates the more consistency in the event descriptions.
 
@@ -129,8 +129,7 @@ I did not end up exploring sentiment analysis fully since the majority of sentim
 
 Only 31 had highly positive emotion and only 4 had extremely negative emotion.
 
-Only 20% had scores over 0.5 in subjectivity
-
+Only 20% of reports had scores over 0.5 in subjectivity, which indicates the corpus of reports are quite objective in their descriptions.
 
 ### Additional Insights
 
