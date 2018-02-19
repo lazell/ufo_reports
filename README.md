@@ -26,6 +26,7 @@ Here are the top 50 n-gram results when I ran K-means with 4 Clusters:
 
 #### Cluster 1 - 4th July fireball, fireworks and flashing lights of various colors
 
+<p style='color:#97B6C2; font-family:courier;font-size:90%;'>
 ['looking' 'show' 'quickly' 'round' 'clouds' 'behind' 'wife' 'circular'
  'watched' 'across sky' 'minute' 'fireball' 'still' '30' 'approximately'
  'line' 'night' 'slow' 'west east' 'speed' 'glowing' 'fast' 'direction'
@@ -33,10 +34,12 @@ Here are the top 50 n-gram results when I ran K-means with 4 Clusters:
  'july' 'sound' 'flying' 'moved' 'two' 'traveling' 'ball' 'slowly' 'high'
  'flashing' 'formation' 'minutes' 'disappeared' 'north' 'objects'
  'fireworks' 'red' 'orange']
+ </p>
 
 
 #### Cluster 2 - Admin notes, blue white light and US Navy missile launch references
 
+<p style='color:#97B6C2; font-family:courier;font-size:90%;'>
  ['contact' 'provides contact information' 'provides contact'
   'information pd' 'contact information pd' 'provides' 'contact information'
   'clouds' 'slowly' 'shaped' 'glowing' 'leaving' 'shape' 'looked like'
@@ -48,16 +51,19 @@ Here are the top 50 n-gram results when I ran K-means with 4 Clusters:
   'navy missile launch pd' 'navy missile' 'navy missile launch'
   'missile launch pd' 'navy' 'launch pd' 'missile launch' 'missile' 'blue'
   'launch']
+   </p>
 
 #### Cluster 3 - Moving objects in formation of various colors
+<p style='color:#97B6C2; font-family:courier;font-size:90%;'>
  'aircraft' 'shaped' 'witnessed' 'around' 'seemed' 'behind' 'slowly'
  'sound' 'direction' 'fire' 'meteor' 'red' 'area' 'said' 'three' 'fast'
  'noticed' 'flying' 'wife' 'seconds' 'moved' 'orange' 'ufo' 'craft'
  'thought' 'night' 'speed' 'large' 'tail' 'shape' 'traveling' 'fireball'
  'across' 'green' 'horizon' 'summary' 'formation' 'blue' 'fireworks'
  'north' 'two' 'objects']
+    </p>
 
-#### Cluster 4 - Mostly descriptive words beginning with letters: l, f, and g!
+#### Cluster 4 - Mostly descriptive words beginning with letters: L, F, and G!
 
 ['longer' 'long' 'little' 'line' 'light sky' 'length' 'left' 'look' 'end'
  'heard' 'headed' 'flew' 'flashing' 'first thought' 'fireworks' 'firework'
@@ -70,8 +76,9 @@ The two clusters that jump out at me are the first two which relate to 4th July 
 
 ![date_clusters](/images/k_means_clusters.png)
 
+Interestingly reports which were classified as cluster 1 were mostly 4th July 2014 and cluster 2 were almost entirely November 7th 2015. Not surprisingly, cluster 4 is spread out across all dates since they are mostly generic descriptive words.
 
-For a handful of dates, I followed a similar technique of TF-IDF above, to get a summary of popular bi-grams for those events and represented a selection of results in a word-cloud. The more frequent a bi-gram appeared in the group, the larger the lettering. The larger the letters are compared to other dates the more consistency in the event descriptions.
+For a handful of dates, I followed a similar technique of TF-IDF above, to get a summary of popular n-grams (mostly bi-grams) for those events and represented a selection of results in a word-cloud (Please note: these are only a selection of words from the analysis). The more frequent a bi-gram appeared in the group, the larger the lettering. The larger the letters are compared to other dates the more consistency in the event descriptions.
 
 #### Midwest Fireball - November 16th 1999
 
