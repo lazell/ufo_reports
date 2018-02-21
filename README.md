@@ -160,9 +160,9 @@ Out of all US reports, only (0.12%) mention the word 'abducted'
 
 ![top_events](/images/US_cities_reports.png)
 
-# Conclusions
+## Conclusions
 
-K-means clustering is a great tool for exploring latent sub-groups of data. Without the clustering, my intuition based on my initial analysis of the top 10 events would not have lead me to investigate the missile launch event of November 2015. Nor had I much reason or interest me into 4th July 1999 event.
+K-means clustering is a great tool for exploring latent sub-groups of data. Without the clustering, my intuition based on my initial analysis of the top 10 events would not have lead me to investigate the missile launch event of November 2015. Nor had I much reason or interest to investigate the 4th July 1999 event.
 
 The varying strength of description similarities make it difficult for a skeptic to dismiss the validity of the event descriptions, especially events which were highly reported. In support this argument, the language of the reports were found to be, for the most part, objective in nature and rarely with high emotion attached.
 
