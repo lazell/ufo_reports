@@ -111,15 +111,12 @@ Not surprisingly, cluster 4 is spread out across all dates since they are mostly
 
 To investigate this further I decided to analyze the report text in a more targeted way, by event date. I chose the following dates for these reasons:
 
-* 1999-7-4 for it's large percentage of reports in cluster 1 and it's high relative popularity score
+
 * 2015-11-07 for it's large percentage of reports in cluster 2
 * 1999-11-16 for it's high relative popularity score
 * 1997-3-13 for a high relative popularity score
 
 For these dates, I followed a similar technique of TF-IDF above, to get a summary of popular n-grams (mostly 2 word bi-grams) for those events and represented a selection of results in a word-cloud (Please note: these are only a selection of words from the analysis). The more frequent a bi-gram appeared in the group, the larger the lettering. The larger the letters are compared to other dates the more consistency in the event descriptions.
-
-#### Independence Day - July 4th 1999
-<insert analysis and word cloud here >
 
 
 #### Midwest Fireball - November 16th 1999
@@ -162,7 +159,7 @@ Out of all US reports, only (0.12%) mention the word 'abducted'
 
 ## Conclusions
 
-K-means clustering is a great tool for exploring latent sub-groups of data. Without the clustering, my intuition based on my initial analysis of the top 10 events would not have lead me to investigate the missile launch event of November 2015. Nor had I much reason or interest to investigate the 4th July 1999 event.
+K-means clustering is a great tool for exploring latent sub-groups of data. Without the clustering, my intuition based on my initial analysis of the top 10 events would not have lead me to investigate the missile launch event of November 2015.
 
 The varying strength of description similarities make it difficult for a skeptic to dismiss the validity of the event descriptions, especially events which were highly reported. In support this argument, the language of the reports were found to be, for the most part, objective in nature and rarely with high emotion attached.
 
