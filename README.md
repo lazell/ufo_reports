@@ -38,9 +38,7 @@ reports).
 ![top_events](/images/US_most_reported_events.png)
 
 Notice that of the top 10, three dates have significantly higher popularity scores than the rest. Interestingly, six are in the
-1990s and two are on the Fourth of July. Oddly, the Fourth
-of July in 1997 was scored as around twice as popular as
-the Fourth of July in 2014.
+1990s and two are on the Fourth of July. Oddly, the 4th July in 1997 was scored as around twice as popular as the 4thJuly in 2014.
 
 My question is, of these top 10 events are there any distinct themes in their descriptions?
 
@@ -51,7 +49,7 @@ I wanted to take a deeper look at this dataset, to understand
 whether there were any distinct themes. The reports typically have a detailed paragraph written by the witness which describes the event in detail, I decided to use basic natural language processing (TF-IDF) and use this to group similar reports together into sub-groups or topics. To capture topics, I used the unsupervised machine learning method of k-means clustering.
 
 #### K-means Clustering on Text Explained...
-Feel free to skip this part, This is an overview of how the algorithm works for text analysis.
+Feel free to skip this part, this is an overview of how the algorithm works for text analysis.
 
 This process creates a number of matrices:
 
@@ -67,7 +65,7 @@ Once we have our TF-IDF matrix of vectors, we can compare their similarity to ea
 
 2. Once all vectors have been assigned to a centroid, the average vector or "middle" of the cluster is calculated from it's cluster members, this becomes the new centroid vector for comparison in the next iteration.
 
-The two steps are repeated many times. At early iterations it is the centroids will be closer to each other, they will adapt and move until the best fit is found by the alorithm.
+The two steps are repeated many times. At early iterations it is the centroids will be closer to each other, they will adapt and move until the best fit is found by the algorithm.
 
 
 #### Visualization of K-means Clustering
@@ -77,7 +75,7 @@ The image below shows how k-means clustering works for 4 clusters.
 
 Image reference: https://github.com/vinhkhuc/VanillaML
 
-For this project, I used Scikit-learn's implementation which uses 300 iterations as the default, it runs the clustering model separate 10 times (with 10 different seeds) and chooses the best output based on inertia as the model.
+For this project, I used Scikit-learn's implementation which uses 300 iterations as the default, it runs the clustering model separate 10 times (with 10 different seeds) and chooses the best output based on inertia of the model.
 
 ### Clustering Method and Results
 
@@ -111,8 +109,7 @@ Here are the top 50 n-gram results for 4 clusters
   'us navy missile launch' 'note us navy missile' 'green'
   'note navy missile launch' 'note navy missile' 'note navy' 'cloud'
   'navy missile launch pd' 'navy missile' 'navy missile launch'
-  'missile launch pd' 'navy' 'launch pd' 'missile launch' 'missile' 'blue'
-  'launch']
+  'missile launch pd' 'navy' 'launch pd' 'missile launch' 'missile' 'blue' 'launch']
 
 #### Cluster 3 - Moving objects in formation of various colors
 
@@ -135,7 +132,7 @@ Here are the top 50 n-gram results for 4 clusters
 
  What most jumped out at me, though, looking at these word
  and phrase groupings, were the first two clusters. Cluster 1
- references the Fourth of July, while Cluster 2 heavily
+ references the 4th July, while Cluster 2 heavily
  references a US Navy missile launch. I was curious to see if
  these clusters represented specific events, particularly
  regarding the missile launch, so I plotted the cluster groups
@@ -152,7 +149,7 @@ These two results may be indicative of class imbalance, where these two dates ac
 Cluster 3 can barely be seen on the chart, the majority of clusters are from 7th November 2015, however they do not reference the missile launch or blue/white lights, this may indicate a separate, less popular event that also occurred on this date.
 
 Cluster 4 is spread out across all the dates, which makes
-sense, given that the words in that cluster are mostly generic words that would score similar to each other given the nature of the text. It is s a prime example of an unintentional clustering outcome, where instead of a topical group, the algorithm has found reports which share similarity in language structure.
+sense, given that the words in that cluster are mostly generic words that would score similar to each other given the nature of the text. It is a prime example of an unintentional clustering outcome, where instead of a topical group, the algorithm has found reports which share similarity in language structure.
 
 
 ### Targeted Analysis
