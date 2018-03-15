@@ -12,6 +12,8 @@ angles. I decided to focus on the most heavily reported
 events, to understand how coherent they were, collectively,
 and to better understand what people were reporting.
 
+Check out my posts on this project: [Part I](https://medium.com/@katie.lazell/more-than-meets-the-eye-unsupervised-learning-on-ufo-reports-part-i-f1f5320cc244) and [Part II](https://medium.com/@katie.lazell/more-than-meets-the-eye-highly-reported-ufo-events-part-ii-23a04f73db68) on Medium.com
+
 I first identified the top 10 most heavily reported events in the
 database. Then, focusing on reports by those dates, I ran an
 unsupervised learning algorithm to cluster the types of reports
